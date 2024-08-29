@@ -15,7 +15,8 @@ There are three directories in this repository:
 
 To make predictions yourself, simply run the `inference.py` script.
 
-It takes two arguments: the directory containing the images you want to process and optionally the path where you want to save the images.
+It takes two arguments: the directory containing the images you want to process and optionally the path where you want to save the processed images.
+It returns a csv file saved in the save_path if argument is provided or in the current directory under the name predictions.csv if not
 
 ```bash
 python inference.py img_dir [--save_path]
