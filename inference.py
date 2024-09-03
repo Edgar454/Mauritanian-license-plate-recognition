@@ -14,8 +14,8 @@ from utils import  process_image
 # Setting the device
 device = 'cuda:0' if torch.cuda.is_available() else "cpu"
 
-processor = DonutProcessor.from_pretrained("Edgar404/donut-plate-recognition-best_model")
-model = VisionEncoderDecoderModel.from_pretrained("Edgar404/donut-plate-recognition-best_model")
+processor = DonutProcessor.from_pretrained("Edgar404/donut-license-plate-best-model")
+model = VisionEncoderDecoderModel.from_pretrained("Edgar404/donut-license-plate-best-model")
 model.to(device)
 
 parser = argparse.ArgumentParser()
